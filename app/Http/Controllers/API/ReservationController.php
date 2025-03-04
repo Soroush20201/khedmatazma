@@ -5,6 +5,7 @@ namespace App\Http\Controllers\API;
 use App\Http\Controllers\Controller;
 use App\Models\Reservation;
 use App\Models\Edition;
+use App\Notifications\ReservationNotification;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Carbon\Carbon;
@@ -39,6 +40,8 @@ class ReservationController extends Controller
 
         $edition->update(['available' => false]);
 
+        $reservation->user->notify(new ReservationNotification("کتاب شما با موفقیت رزرو شد!"));
+
         return response()->json($reservation, Response::HTTP_CREATED);
     }
 
@@ -56,8 +59,10 @@ class ReservationController extends Controller
 
     public function returnBook(Reservation $reservation)
     {
-        if ($reservation->status != 'approved') {
-            return response()->json(['message' => 'Reservation is not active'], Response::HTTP_CONFLICT);
+        $daysOverdue = now()->diffInDays($reservation->due_date, false);
+
+        if ($daysOverdue > 0) {
+            $reservation->user->notify(new ReservationNotification("شما {$daysOverdue} روز تأخیر داشته‌اید. جریمه ثبت شده است."));
         }
 
         $reservation->update(['status' => 'returned']);

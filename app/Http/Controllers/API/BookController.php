@@ -6,16 +6,19 @@ use App\Http\Controllers\Controller;
 use App\Models\Book;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Cache;
 
 class BookController extends Controller
 {
-    // 📌 نمایش لیست کتاب‌ها
+
     public function index()
     {
-        return response()->json(Book::all(), Response::HTTP_OK);
+        return Cache::remember('books', 60, function () {
+            return response()->json(Book::all(), Response::HTTP_OK);
+        });
     }
 
-    // 📌 ایجاد یک کتاب جدید
+
     public function store(Request $request)
     {
         $request->validate([
@@ -30,13 +33,13 @@ class BookController extends Controller
         return response()->json($book, Response::HTTP_CREATED);
     }
 
-    // 📌 نمایش یک کتاب خاص
+
     public function show(Book $book)
     {
         return response()->json($book, Response::HTTP_OK);
     }
 
-    // 📌 ویرایش یک کتاب
+
     public function update(Request $request, Book $book)
     {
         $request->validate([
@@ -51,7 +54,7 @@ class BookController extends Controller
         return response()->json($book, Response::HTTP_OK);
     }
 
-    // 📌 حذف یک کتاب
+
     public function destroy(Book $book)
     {
         $book->delete();
