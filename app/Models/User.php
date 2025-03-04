@@ -21,6 +21,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'title',
+        'author',
+        'description',
+        'isbn'
     ];
 
     /**
@@ -44,5 +48,9 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+    public function editions()
+    {
+        return $this->hasMany(Edition::class);
     }
 }
