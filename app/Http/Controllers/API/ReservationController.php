@@ -3,71 +3,54 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreReservationRequest;
+use App\Http\Resources\ReservationResource;
 use App\Models\Reservation;
-use App\Models\Edition;
-use App\Notifications\ReservationNotification;
-use Illuminate\Http\Request;
+use App\Repositories\ReservationRepository;
 use Illuminate\Http\Response;
-use Carbon\Carbon;
 
 class ReservationController extends Controller
 {
-    public function index()
+    protected $reservationRepository;
+
+    public function __construct(ReservationRepository $reservationRepository)
     {
-        return response()->json(Reservation::all(), Response::HTTP_OK);
+        $this->reservationRepository = $reservationRepository;
     }
 
-    public function store(Request $request)
+    public function index()
     {
-        $request->validate([
-            'user_id' => 'required|exists:users,id',
-            'edition_id' => 'required|exists:editions,id',
-        ]);
+        return ReservationResource::collection($this->reservationRepository->all());
+    }
 
-        $edition = Edition::find($request->edition_id);
+    public function store(StoreReservationRequest $request)
+    {
+        $reservation = $this->reservationRepository->create($request->validated());
 
-        if (!$edition->available) {
+        if (!$reservation) {
             return response()->json(['message' => 'This edition is not available'], Response::HTTP_CONFLICT);
         }
 
-        $reservation = Reservation::create([
-            'user_id' => $request->user_id,
-            'edition_id' => $request->edition_id,
-            'reserved_at' => Carbon::now(),
-            'due_date' => Carbon::now()->addDays(14),
-            'status' => 'approved'
-        ]);
+        $reservation->user->notify(new \App\Notifications\ReservationNotification("کتاب شما با موفقیت رزرو شد!"));
 
-        $edition->update(['available' => false]);
-
-        $reservation->user->notify(new ReservationNotification("کتاب شما با موفقیت رزرو شد!"));
-
-        return response()->json($reservation, Response::HTTP_CREATED);
+        return new ReservationResource($reservation);
     }
 
     public function cancel(Reservation $reservation)
     {
-        if ($reservation->status != 'approved') {
+        if (!$this->reservationRepository->cancel($reservation)) {
             return response()->json(['message' => 'Reservation is not active'], Response::HTTP_CONFLICT);
         }
-
-        $reservation->update(['status' => 'cancelled']);
-        $reservation->edition->update(['available' => true]);
 
         return response()->json(['message' => 'Reservation cancelled successfully'], Response::HTTP_OK);
     }
 
     public function returnBook(Reservation $reservation)
     {
-        $daysOverdue = now()->diffInDays($reservation->due_date, false);
-
-        if ($daysOverdue > 0) {
-            $reservation->user->notify(new ReservationNotification("شما {$daysOverdue} روز تأخیر داشته‌اید. جریمه ثبت شده است."));
+        if ($this->reservationRepository->returnBook($reservation)) {
+            return response()->json(['message' => 'Book returned successfully'], Response::HTTP_OK);
         }
 
-        $reservation->update(['status' => 'returned']);
-        $reservation->edition->update(['available' => true]);
-
-        return response()->json(['message' => 'Book returned successfully'], Response::HTTP_OK);
+        return response()->json(['message' => 'Error processing return'], Response::HTTP_BAD_REQUEST);
     }
 }
