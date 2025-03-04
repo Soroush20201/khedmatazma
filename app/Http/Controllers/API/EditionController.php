@@ -3,60 +3,50 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreEditionRequest;
+use App\Http\Requests\UpdateEditionRequest;
+use App\Http\Resources\EditionResource;
 use App\Models\Edition;
-use Illuminate\Http\Request;
+use App\Repositories\EditionRepository;
 use Illuminate\Http\Response;
 
 class EditionController extends Controller
 {
+    protected $editionRepository;
+
+    public function __construct(EditionRepository $editionRepository)
+    {
+        $this->editionRepository = $editionRepository;
+    }
 
     public function index($book_id)
     {
-        $editions = Edition::where('book_id', $book_id)->get();
-        return response()->json($editions, Response::HTTP_OK);
+        return EditionResource::collection($this->editionRepository->getByBookId($book_id));
     }
 
-
-    public function store(Request $request)
+    public function store(StoreEditionRequest $request)
     {
-        $request->validate([
-            'book_id' => 'required|exists:books,id',
-            'condition' => 'required|in:new,used,damaged',
-            'repair_count' => 'nullable|integer|min:0',
-            'available' => 'boolean',
-        ]);
-
-        $edition = Edition::create($request->all());
-
-        return response()->json($edition, Response::HTTP_CREATED);
+        $edition = $this->editionRepository->create($request->validated());
+        return new EditionResource($edition);
     }
 
     public function show(Edition $edition)
     {
-        return response()->json($edition, Response::HTTP_OK);
+        return new EditionResource($edition);
     }
 
-    public function update(Request $request, Edition $edition)
+    public function update(UpdateEditionRequest $request, Edition $edition)
     {
-        $request->validate([
-            'condition' => 'sometimes|in:new,used,damaged',
-            'repair_count' => 'nullable|integer|min:0',
-            'available' => 'boolean',
-        ]);
-
-        $edition->update($request->all());
-
-        return response()->json($edition, Response::HTTP_OK);
+        $edition = $this->editionRepository->update($edition, $request->validated());
+        return new EditionResource($edition);
     }
-
 
     public function destroy(Edition $edition)
     {
-        if ($edition->reservations()->count() > 0) {
+        if (!$this->editionRepository->delete($edition)) {
             return response()->json(['message' => 'Cannot delete edition with active reservations'], Response::HTTP_CONFLICT);
         }
 
-        $edition->delete();
         return response()->json(['message' => 'Edition deleted successfully'], Response::HTTP_NO_CONTENT);
     }
 }
