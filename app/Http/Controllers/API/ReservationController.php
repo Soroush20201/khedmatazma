@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Exceptions\ReservationException;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreReservationRequest;
 use App\Http\Resources\ReservationResource;
 use App\Models\Reservation;
 use App\Repositories\ReservationRepository;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Log;
 
 class ReservationController extends Controller
 {
@@ -25,15 +27,25 @@ class ReservationController extends Controller
 
     public function store(StoreReservationRequest $request)
     {
-        $reservation = $this->reservationRepository->create($request->validated());
+        try {
+            $reservation = $this->reservationRepository->create($request->validated());
 
-        if (!$reservation) {
-            return response()->json(['message' => 'This edition is not available'], Response::HTTP_CONFLICT);
+            if (!$reservation) {
+                throw new ReservationException("This edition is not available for reservation.");
+            }
+
+            $reservation->user->notify(new \App\Notifications\ReservationNotification("کتاب شما با موفقیت رزرو شد!"));
+
+            return new ReservationResource($reservation);
+        } catch (ReservationException $e) {
+            return $e->render();
+        } catch (\Exception $e) {
+            Log::error('Reservation Error: ' . $e->getMessage());
+            return response()->json([
+                'error'   => 'Reservation Failed',
+                'message' => 'مشکلی در رزرو کتاب رخ داده است.'
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
         }
-
-        $reservation->user->notify(new \App\Notifications\ReservationNotification("کتاب شما با موفقیت رزرو شد!"));
-
-        return new ReservationResource($reservation);
     }
 
     public function cancel(Reservation $reservation)
