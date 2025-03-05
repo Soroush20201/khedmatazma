@@ -20,8 +20,10 @@ class BookResource extends JsonResource
             'author'      => $this->author,
             'isbn'        => $this->isbn,
             'description' => $this->description,
-            'created_at'  => $this->created_at->format('Y-m-d H:i:s'),
-            'updated_at'  => $this->updated_at->format('Y-m-d H:i:s'),
+            'timestamps'  => [
+                'created_at' => $this->created_at->format('Y-m-d H:i:s'),
+                'updated_at' => $this->updated_at->format('Y-m-d H:i:s'),
+            ],
         ];
     }
 }

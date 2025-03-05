@@ -20,8 +20,10 @@ class EditionResource extends JsonResource
             'condition'    => $this->condition,
             'repair_count' => $this->repair_count,
             'available'    => $this->available,
-            'created_at'   => $this->created_at->format('Y-m-d H:i:s'),
-            'updated_at'   => $this->updated_at->format('Y-m-d H:i:s'),
+            'timestamps'   => [
+                'created_at' => $this->created_at->format('Y-m-d H:i:s'),
+                'updated_at' => $this->updated_at->format('Y-m-d H:i:s'),
+            ],
         ];
     }
 }
