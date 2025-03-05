@@ -4,6 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Carbon;
 
 class ReservationResource extends JsonResource
 {
@@ -15,12 +16,12 @@ class ReservationResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'id'          => $this->id,
-            'user'        => $this->user->name,
-            'edition_id'  => $this->edition_id,
-            'reserved_at' => $this->reserved_at->format('Y-m-d H:i:s'),
-            'due_date'    => $this->due_date->format('Y-m-d H:i:s'),
-            'status'      => $this->status,
+            'id' => $this->id,
+            'user_id' => $this->user_id,
+            'edition_id' => $this->edition_id,
+            'reserved_at' => Carbon::parse($this->reserved_at)->format('Y-m-d H:i:s'),
+            'due_date' => Carbon::parse($this->due_date)->format('Y-m-d H:i:s'),
+            'status' => $this->status,
         ];
     }
 }

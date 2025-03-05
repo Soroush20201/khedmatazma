@@ -20,4 +20,8 @@ class Edition extends Model
     {
         return $this->hasMany(History::class);
     }
+    public function reservations()
+    {
+        return $this->hasMany(Reservation::class);
+    }
 }
