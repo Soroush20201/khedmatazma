@@ -1,0 +1,1357 @@
+{
+	"info": {
+		"_postman_id": "7bddd66a-225a-48ba-bbc7-3019eb811d9f",
+		"name": "LibrarySystem",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32247241"
+	},
+	"item": [
+		{
+			"name": "indexBooks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 07:04:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Books retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"Consectetur et reprehenderit.\",\n            \"author\": \"Marquise Langworth\",\n            \"isbn\": \"9799901261689\",\n            \"description\": \"In rerum quo maxime asperiores et ducimus saepe. In aliquam dicta aperiam eaque voluptatibus. Ducimus eos consequatur unde cupiditate culpa provident sunt occaecati.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:38\",\n                \"updated_at\": \"2025-03-05 06:49:38\"\n            }\n        },\n        {\n            \"id\": 2,\n            \"title\": \"Explicabo aliquam accusantium.\",\n            \"author\": \"Delphia Sanford\",\n            \"isbn\": \"9781248524619\",\n            \"description\": \"Ut voluptate doloremque aut incidunt eaque sunt. Animi quibusdam laborum unde quam est. Quis officia enim dignissimos eligendi aspernatur rerum beatae.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:38\",\n                \"updated_at\": \"2025-03-05 06:49:38\"\n            }\n        },\n        {\n            \"id\": 3,\n            \"title\": \"Recusandae quo consequuntur et.\",\n            \"author\": \"Earline Halvorson III\",\n            \"isbn\": \"9795548013025\",\n            \"description\": \"Debitis ut est nostrum at molestias deleniti voluptatum. Possimus quis et nihil.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 4,\n            \"title\": \"Exercitationem voluptatum soluta.\",\n            \"author\": \"Treva Heaney\",\n            \"isbn\": \"9796822403068\",\n            \"description\": \"Soluta corrupti at eos accusantium. Laudantium quod exercitationem repudiandae rerum commodi est.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 5,\n            \"title\": \"Consequuntur voluptates voluptatum.\",\n            \"author\": \"Russ McLaughlin\",\n            \"isbn\": \"9793543138972\",\n            \"description\": \"Accusamus fugiat consequatur voluptatem neque. Est corrupti voluptatum et nemo ad repellat.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 6,\n            \"title\": \"Neque alias quisquam.\",\n            \"author\": \"Fanny Waelchi\",\n            \"isbn\": \"9791883325779\",\n            \"description\": \"Debitis dolores sed voluptas est. Voluptatum sit veritatis porro numquam incidunt doloribus. Maxime dolorum sequi est eveniet labore.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 7,\n            \"title\": \"Eum fugit nobis magni.\",\n            \"author\": \"Dr. Taya Stoltenberg\",\n            \"isbn\": \"9785283440415\",\n            \"description\": \"Iure corporis aut repellat dolores eum. Optio nihil saepe voluptas ipsum. Nostrum qui modi quod ex qui. Enim omnis soluta laboriosam aliquid voluptates doloremque. Provident perspiciatis eligendi magni ut natus possimus nobis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 8,\n            \"title\": \"Porro ea neque.\",\n            \"author\": \"Buster Hettinger\",\n            \"isbn\": \"9792279712197\",\n            \"description\": \"Error omnis ab eaque velit eveniet voluptas. Non aspernatur voluptas inventore nam mollitia sed. Libero deserunt illum a iure nisi fugit debitis doloribus. Dicta et nisi unde officiis et.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 9,\n            \"title\": \"Quia est.\",\n            \"author\": \"Drew Hilpert\",\n            \"isbn\": \"9793499983619\",\n            \"description\": \"Sed eligendi quis voluptate iusto. A modi a unde aperiam. Rerum dolore perferendis suscipit rerum in excepturi. Ipsum quidem non aspernatur sunt explicabo officia.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 10,\n            \"title\": \"Iste magni atque.\",\n            \"author\": \"Petra Schaefer\",\n            \"isbn\": \"9792040344503\",\n            \"description\": \"Enim expedita praesentium vero sed esse. Harum mollitia animi veniam cupiditate non. Dolore modi exercitationem aut occaecati. Rerum et vel beatae exercitationem.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 11,\n            \"title\": \"Explicabo eligendi.\",\n            \"author\": \"Mr. Alec Grimes\",\n            \"isbn\": \"9782083881783\",\n            \"description\": \"Tenetur tempora debitis omnis tempora dolorem occaecati. Omnis minus assumenda adipisci qui molestiae illo. Quia nulla et dolor quo sed sit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 12,\n            \"title\": \"Assumenda quis expedita quis.\",\n            \"author\": \"Miss Cayla Schamberger\",\n            \"isbn\": \"9788012949258\",\n            \"description\": \"Et adipisci adipisci fuga inventore et enim magni. Enim voluptatibus libero similique recusandae tempore vero. Repellendus velit enim eos voluptas corporis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 13,\n            \"title\": \"Esse voluptatem velit corporis.\",\n            \"author\": \"Oma Satterfield\",\n            \"isbn\": \"9792145734988\",\n            \"description\": \"Nihil sequi quos aliquam sunt ipsa. Neque adipisci quisquam sed aliquam soluta ea numquam. Harum cumque a dicta mollitia velit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 14,\n            \"title\": \"Ad autem debitis.\",\n            \"author\": \"Ford Ruecker V\",\n            \"isbn\": \"9780761320432\",\n            \"description\": \"Tempora dolor atque dolorem at recusandae. Sit non eius ipsam ducimus. Deserunt voluptas cum debitis exercitationem accusantium non. Minus ipsam qui molestiae in aspernatur aut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 15,\n            \"title\": \"Molestiae rem quisquam voluptatem.\",\n            \"author\": \"Brendan Koch I\",\n            \"isbn\": \"9798474451770\",\n            \"description\": \"Excepturi corrupti ducimus vero et expedita. Voluptatem dolor tenetur incidunt architecto. Sit id error sint ipsum voluptas non modi ratione.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 16,\n            \"title\": \"Est est harum.\",\n            \"author\": \"Dr. Hallie Monahan DDS\",\n            \"isbn\": \"9797337708839\",\n            \"description\": \"Mollitia quasi ex et dicta aut vitae. Consequatur sit velit omnis ipsa. Sapiente accusantium rerum ut eveniet accusantium quis recusandae. Nihil delectus aliquid nesciunt.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 17,\n            \"title\": \"Tempore ut possimus esse.\",\n            \"author\": \"Frederik Stoltenberg DDS\",\n            \"isbn\": \"9798221012247\",\n            \"description\": \"Possimus quo sapiente ad doloremque placeat. Enim aut illo laboriosam vitae laborum nihil aut. Blanditiis aspernatur pariatur ducimus vel omnis accusantium molestiae. Quo quo et illum itaque. Ullam qui facilis vel dolores est asperiores.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 18,\n            \"title\": \"Aut et dolores.\",\n            \"author\": \"Demarcus Weimann\",\n            \"isbn\": \"9792092695004\",\n            \"description\": \"Laboriosam suscipit qui sequi non. Error sed animi modi dolore eos sed itaque blanditiis. Fugit officia voluptas ut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 19,\n            \"title\": \"Ex minus et quos.\",\n            \"author\": \"Olin Renner DDS\",\n            \"isbn\": \"9782056021918\",\n            \"description\": \"Et totam ut explicabo. Nesciunt fuga distinctio est corporis molestiae qui. Rerum est aut sint illum molestiae nulla. Esse unde sed placeat distinctio.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 20,\n            \"title\": \"Id autem sint.\",\n            \"author\": \"Chasity Emmerich\",\n            \"isbn\": \"9786138509417\",\n            \"description\": \"Voluptates optio ipsa expedita eveniet molestiae. Cumque sed voluptate hic aliquid minima maxime. Voluptas similique accusamus quia voluptate consequuntur accusantium.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 21,\n            \"title\": \"Necessitatibus aliquid molestiae.\",\n            \"author\": \"Reanna Crona Sr.\",\n            \"isbn\": \"9792361524936\",\n            \"description\": \"Molestias cumque optio ducimus itaque mollitia eum. Sit eius et quasi possimus eaque provident ratione. Fugit accusantium inventore voluptas iste tenetur id at.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 22,\n            \"title\": \"Aspernatur fugiat reiciendis culpa.\",\n            \"author\": \"Ollie Osinski\",\n            \"isbn\": \"9782205853919\",\n            \"description\": \"Nostrum quia ipsam non iste libero. Nihil architecto hic cum quos amet voluptas nesciunt occaecati. Dolore asperiores atque labore et laboriosam. Nobis perferendis reprehenderit vel quis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 23,\n            \"title\": \"Nemo iure sed et.\",\n            \"author\": \"Chester Dicki\",\n            \"isbn\": \"9785533142441\",\n            \"description\": \"Officia quia architecto ipsam fugiat alias dicta. Omnis voluptatem harum commodi ea. Exercitationem aut accusantium alias consectetur rerum at ut. Ab aut labore porro vero error.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 24,\n            \"title\": \"Enim facere ad.\",\n            \"author\": \"Susanna Wisozk DDS\",\n            \"isbn\": \"9798957657811\",\n            \"description\": \"Suscipit dolorum et molestiae excepturi ut non eos. Culpa quae dignissimos perspiciatis dolores consequuntur ipsum. Natus aut aperiam distinctio illo. Eligendi laudantium quis doloribus veniam sed voluptates.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 25,\n            \"title\": \"Ut et quia quia.\",\n            \"author\": \"Ms. Salma Kreiger\",\n            \"isbn\": \"9799731705247\",\n            \"description\": \"Inventore commodi aliquid cumque eaque. Eaque nisi dicta dicta facere et. Totam eligendi vel rerum doloremque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 26,\n            \"title\": \"Eligendi exercitationem voluptates.\",\n            \"author\": \"Domenica Sauer\",\n            \"isbn\": \"9784517311293\",\n            \"description\": \"Nam eum odio dolorem et ab neque. Non repudiandae eaque magnam sed laudantium est. Quos velit omnis ut eveniet beatae facilis. Quis ipsa soluta voluptas illum. Sapiente eos ipsa odit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 27,\n            \"title\": \"Quo unde at.\",\n            \"author\": \"Dr. Audrey Kuphal II\",\n            \"isbn\": \"9788495309242\",\n            \"description\": \"Quia suscipit ut fuga dolor id ipsam non nemo. Eaque et quam cumque occaecati sed. Culpa quis omnis magnam impedit repellendus.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 28,\n            \"title\": \"Asperiores quae perferendis illo.\",\n            \"author\": \"Amalia Nienow\",\n            \"isbn\": \"9796465441564\",\n            \"description\": \"Omnis quam perferendis aut eum quia quae eligendi ipsa. Quos nobis omnis voluptatem voluptatem neque ab laudantium. Sit dolorum hic ut dicta voluptatem nesciunt. Voluptas dicta in repellendus ut numquam ab atque quas.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 29,\n            \"title\": \"Repellendus non eum voluptatem.\",\n            \"author\": \"Raul Herman\",\n            \"isbn\": \"9798310939295\",\n            \"description\": \"Magnam laborum amet illum quo nemo nihil eligendi. Consequuntur laudantium porro ut voluptate totam earum ut. Ea eum dicta nisi incidunt.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 30,\n            \"title\": \"Sint non dicta.\",\n            \"author\": \"Ethan Hyatt\",\n            \"isbn\": \"9789627984498\",\n            \"description\": \"Ut unde consequatur ratione accusamus dolore aliquam. Repellat unde eum culpa nesciunt. Accusantium est quia et dolor accusantium tenetur molestiae. Omnis nihil repellat occaecati quibusdam quos. Ab totam molestias sunt sequi molestiae qui.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 31,\n            \"title\": \"In ratione illo sunt.\",\n            \"author\": \"Mckayla Willms\",\n            \"isbn\": \"9791445153703\",\n            \"description\": \"A minima nihil repellendus quis quo. Maxime hic quam debitis. Eius magnam quam dolores ipsum magni. Eos adipisci voluptates nihil.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 32,\n            \"title\": \"Eius fuga maiores labore sed.\",\n            \"author\": \"Ransom Gibson\",\n            \"isbn\": \"9795639270894\",\n            \"description\": \"Culpa repellendus corrupti in eaque. Voluptatem architecto consequatur assumenda est quidem aspernatur fugit. Dolores non veritatis dolor maxime. Nihil iusto assumenda blanditiis voluptatem.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 33,\n            \"title\": \"Autem eveniet sed exercitationem.\",\n            \"author\": \"Uriel Thompson\",\n            \"isbn\": \"9784576610047\",\n            \"description\": \"Aperiam perferendis quo sint dolorem doloribus. Culpa exercitationem qui et officia. Ut dignissimos saepe et sint dolores repudiandae et.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 34,\n            \"title\": \"Tenetur maiores et.\",\n            \"author\": \"Prof. Lola Spinka III\",\n            \"isbn\": \"9799804891105\",\n            \"description\": \"Modi ipsum perspiciatis molestiae et dolorum voluptate voluptas maxime. Omnis sint qui possimus nobis nemo.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 35,\n            \"title\": \"Non ut aut voluptatem.\",\n            \"author\": \"Bennett Olson\",\n            \"isbn\": \"9785075343344\",\n            \"description\": \"Sit exercitationem eius ipsum omnis nesciunt similique aut. Itaque at doloremque rerum. Repellendus exercitationem laboriosam ipsum aliquid enim minima.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 36,\n            \"title\": \"Qui nam sit.\",\n            \"author\": \"Colten Borer\",\n            \"isbn\": \"9799415775023\",\n            \"description\": \"Ea voluptatem esse dolor eos. Temporibus nesciunt consequuntur recusandae ut et. Commodi quis vel assumenda voluptate quo asperiores quo. Eius impedit adipisci eum hic.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 37,\n            \"title\": \"Eum sunt error voluptate.\",\n            \"author\": \"Buford Stehr\",\n            \"isbn\": \"9795270892974\",\n            \"description\": \"Qui voluptas quia quod. Facere accusantium deleniti distinctio rem. Quos ducimus dolorem aut quia. Perferendis labore amet blanditiis ea magni nam.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 38,\n            \"title\": \"Rerum aut qui.\",\n            \"author\": \"Earnestine Spinka PhD\",\n            \"isbn\": \"9790328253448\",\n            \"description\": \"Quam quis cupiditate inventore corrupti dolores tempore. Est sit dicta quasi explicabo. Hic soluta provident dolorem odit temporibus aut nobis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 39,\n            \"title\": \"Dolores mollitia ad.\",\n            \"author\": \"Jaclyn Wilderman\",\n            \"isbn\": \"9796064450783\",\n            \"description\": \"In quo quidem impedit fuga sit voluptatem commodi. Distinctio illo et aliquam illo expedita quod nam. Qui aliquid debitis voluptas impedit molestias rerum delectus est. Voluptas vel exercitationem veniam tempore.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 40,\n            \"title\": \"Neque earum quia laborum.\",\n            \"author\": \"Alejandra Torp\",\n            \"isbn\": \"9788982964732\",\n            \"description\": \"Quam eum minus fuga. Consequatur ut aperiam quas eius consequatur perferendis. Nesciunt non quidem doloribus velit. Autem autem ad neque aliquid.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 41,\n            \"title\": \"Aut nobis explicabo qui.\",\n            \"author\": \"Regan Haag Jr.\",\n            \"isbn\": \"9790959454603\",\n            \"description\": \"Repudiandae est voluptas dolorem tenetur id labore voluptatum. Illum magnam ea voluptas. Tenetur id soluta recusandae ad vitae provident. Veritatis expedita dicta maxime et perferendis blanditiis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 42,\n            \"title\": \"Sint assumenda voluptatibus animi.\",\n            \"author\": \"Prof. Blaze Huel DDS\",\n            \"isbn\": \"9782129952286\",\n            \"description\": \"Quasi sit est at animi fuga omnis aliquam reprehenderit. Quia nostrum quibusdam repellat repellat odit omnis. Iure aut sed dolor consequatur beatae culpa.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:39\",\n                \"updated_at\": \"2025-03-05 06:49:39\"\n            }\n        },\n        {\n            \"id\": 43,\n            \"title\": \"Repellat fugiat cum.\",\n            \"author\": \"Prof. Anastacio Rath\",\n            \"isbn\": \"9783781724792\",\n            \"description\": \"Atque eveniet vero placeat earum. Molestiae consequatur perferendis quae cum. Rerum error rerum quo eaque ut corporis doloribus. Nemo et adipisci quae dignissimos inventore.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 44,\n            \"title\": \"Iure occaecati quaerat voluptas.\",\n            \"author\": \"Anne Kling\",\n            \"isbn\": \"9795831652610\",\n            \"description\": \"Nobis repellendus qui cupiditate et nihil quos necessitatibus. Excepturi qui occaecati fugit consequatur voluptatibus dolores. Est iste autem illo accusantium. Quaerat odio veniam odit fugiat similique.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 45,\n            \"title\": \"Accusamus dolor.\",\n            \"author\": \"Dr. Maiya Pfeffer\",\n            \"isbn\": \"9788807357664\",\n            \"description\": \"Unde dolor architecto debitis perferendis. Aspernatur repellat voluptas ex ipsa reprehenderit vitae voluptatem. Atque et fugit sit vitae at vitae quam. Nisi dolorem velit assumenda culpa et delectus. Nihil placeat maxime suscipit voluptatem dicta aut molestiae.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 46,\n            \"title\": \"Eos autem id cupiditate.\",\n            \"author\": \"Isabelle Johns Sr.\",\n            \"isbn\": \"9780421641600\",\n            \"description\": \"Odio a voluptas hic dolor. Laborum ipsam qui repellendus. Voluptas amet consequatur quo et dolorem. Nihil autem aliquid deserunt quae officiis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 47,\n            \"title\": \"Praesentium itaque.\",\n            \"author\": \"Leola Lindgren IV\",\n            \"isbn\": \"9780433660842\",\n            \"description\": \"Ut id totam nihil voluptatem repudiandae voluptates et. Quis sequi deleniti consequatur odio est tempore corporis. Natus illo cumque qui eius. Nihil et et dolor voluptas inventore sint ad.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 48,\n            \"title\": \"Reiciendis expedita sint saepe.\",\n            \"author\": \"Viviane Bednar\",\n            \"isbn\": \"9786807049015\",\n            \"description\": \"Rerum veniam tenetur neque dolores mollitia doloremque magnam. Soluta aut id eveniet voluptatem corporis. Facilis nesciunt optio et minus iure optio nostrum.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 49,\n            \"title\": \"Sint eligendi.\",\n            \"author\": \"Sydney Bergnaum\",\n            \"isbn\": \"9799038550540\",\n            \"description\": \"Sunt consequatur rerum ut et. Eveniet totam excepturi molestiae aperiam illum dolorem rem possimus. Debitis asperiores sed sunt ut consectetur sit minima.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 50,\n            \"title\": \"Enim ut reiciendis iure consequuntur.\",\n            \"author\": \"Karianne Kutch\",\n            \"isbn\": \"9786076746004\",\n            \"description\": \"Debitis voluptatem molestias reiciendis deserunt atque expedita. Animi et recusandae sed ut sit deserunt est. Rerum commodi quas velit reiciendis quasi officiis iusto aut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 51,\n            \"title\": \"Ut debitis sit.\",\n            \"author\": \"Hardy Schroeder\",\n            \"isbn\": \"9784003872512\",\n            \"description\": \"Ipsa consequatur quisquam assumenda dolores. Et quia repudiandae rerum aut dignissimos id.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 52,\n            \"title\": \"Necessitatibus vel inventore.\",\n            \"author\": \"Prof. Hilario Jones\",\n            \"isbn\": \"9787868683958\",\n            \"description\": \"Id odio qui animi sed dolor ut. Ducimus id repudiandae quas. Natus tenetur consequuntur ab corrupti qui et voluptates perferendis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 53,\n            \"title\": \"Eum quam accusamus voluptatem voluptas.\",\n            \"author\": \"Cleo McCullough DVM\",\n            \"isbn\": \"9781185633009\",\n            \"description\": \"Corrupti eveniet quaerat libero nobis. Possimus atque aut quisquam amet commodi. Ad et reiciendis hic nam consectetur autem deserunt.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 54,\n            \"title\": \"Ad quis pariatur sequi sed.\",\n            \"author\": \"Felipa Johns III\",\n            \"isbn\": \"9782983952637\",\n            \"description\": \"Dolores aut voluptatem asperiores aperiam debitis. Iusto rerum vero quis laudantium rerum quo. Hic dolor perferendis nemo aliquid. Rem aut ut dolores nulla voluptas.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 55,\n            \"title\": \"Autem eligendi quasi eum.\",\n            \"author\": \"Lydia Howe\",\n            \"isbn\": \"9793837900636\",\n            \"description\": \"Quo aut ducimus quis quia. Corrupti quam delectus rerum fugit. Minus nulla deserunt ratione perferendis error. Aut deleniti sunt est aut et perspiciatis aut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 56,\n            \"title\": \"Earum labore libero.\",\n            \"author\": \"Bernie Reynolds\",\n            \"isbn\": \"9798609811868\",\n            \"description\": \"Similique est consequatur fuga voluptate est rem eaque. Accusamus iure non totam consequatur eaque vitae rem libero. Et aperiam cupiditate voluptatem molestias. Quia voluptatem officiis fugiat voluptate at animi.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 57,\n            \"title\": \"Totam eum natus quis.\",\n            \"author\": \"Elsie Feil\",\n            \"isbn\": \"9781289269999\",\n            \"description\": \"Voluptatibus praesentium perspiciatis amet repellat est. Quod incidunt repudiandae sint necessitatibus modi. Magnam minima cum quam ea.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 58,\n            \"title\": \"Accusamus molestias quo.\",\n            \"author\": \"Prof. Mathew Leffler Sr.\",\n            \"isbn\": \"9798749821772\",\n            \"description\": \"Dicta sed et nihil consequatur reiciendis quis omnis minus. Sed delectus itaque autem rerum nihil. Culpa nesciunt facere laboriosam aut hic adipisci placeat. Qui dolores quasi accusantium odit quia praesentium.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 59,\n            \"title\": \"Sunt omnis.\",\n            \"author\": \"Mrs. Jennifer Pagac\",\n            \"isbn\": \"9787621919294\",\n            \"description\": \"Doloribus nesciunt ea nulla corrupti laudantium alias. Repellat ut quas rem atque. Assumenda rem corporis aut quia quisquam velit qui. Alias hic rerum quia et eaque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 60,\n            \"title\": \"Molestias dolor sapiente.\",\n            \"author\": \"Zella Medhurst\",\n            \"isbn\": \"9790441512194\",\n            \"description\": \"Voluptatem provident voluptate temporibus ut ipsam. Qui soluta fuga amet omnis. Nam omnis iure qui necessitatibus consectetur fugit illo. Est labore voluptas consequuntur eveniet vel quia inventore.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 61,\n            \"title\": \"In tempora ut vel.\",\n            \"author\": \"Kiley Walsh\",\n            \"isbn\": \"9785711444190\",\n            \"description\": \"Id quaerat dolorem est magni dignissimos minus sunt. Sunt sit sint nemo libero saepe mollitia. Voluptatem sit quidem et sed inventore voluptas delectus. Vero sit deserunt nesciunt eveniet sunt corrupti ad.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 62,\n            \"title\": \"Quam sunt eum.\",\n            \"author\": \"Shanie Cormier\",\n            \"isbn\": \"9782600614290\",\n            \"description\": \"Mollitia ipsum facilis necessitatibus molestias provident eum. Voluptatibus ut non saepe neque. Et dignissimos quibusdam sed quibusdam eum eaque officia. Molestiae ut quis eos dignissimos.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 63,\n            \"title\": \"Tempore maxime quis ea.\",\n            \"author\": \"Ms. Elza Rath\",\n            \"isbn\": \"9788487949906\",\n            \"description\": \"Voluptatem nihil autem nihil dolor voluptatem. Ut ipsam quae occaecati qui ipsam aut vel. Eos illo id repellat et et id.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 64,\n            \"title\": \"Blanditiis delectus.\",\n            \"author\": \"Juwan O'Conner\",\n            \"isbn\": \"9790137790837\",\n            \"description\": \"Fuga mollitia corrupti mollitia praesentium. Officia atque asperiores perferendis vel vitae quo. Blanditiis accusamus rem vel rerum ut. Aut atque sit ipsa aut explicabo ad eligendi.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 65,\n            \"title\": \"Et provident eum libero.\",\n            \"author\": \"Lonie DuBuque\",\n            \"isbn\": \"9780301639192\",\n            \"description\": \"Et vel tempore omnis ut. Est labore in natus esse quia. Dolore vel reiciendis nobis laudantium quaerat nulla quos. Cum eligendi qui provident cupiditate ut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 66,\n            \"title\": \"Ipsum ea sunt.\",\n            \"author\": \"Melisa Schuppe\",\n            \"isbn\": \"9781256070474\",\n            \"description\": \"Ea beatae autem esse consequatur. Eius tenetur quasi et et suscipit dignissimos reprehenderit. Totam suscipit dolores consequatur velit deserunt labore omnis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 67,\n            \"title\": \"Consectetur et voluptas et.\",\n            \"author\": \"Prof. Gwendolyn Renner\",\n            \"isbn\": \"9786918921460\",\n            \"description\": \"Delectus dolores debitis voluptas. Facere earum laboriosam qui. Et nihil blanditiis unde nihil. Deserunt asperiores est numquam cumque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 68,\n            \"title\": \"Sed molestias eum.\",\n            \"author\": \"Ms. Ariane Schmitt\",\n            \"isbn\": \"9781192863529\",\n            \"description\": \"Optio et qui laudantium tenetur. Facilis voluptas itaque et consequatur quia. Magnam labore dolor harum temporibus et quo nostrum quis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 69,\n            \"title\": \"Libero eos totam cumque.\",\n            \"author\": \"Mr. Carroll Kessler Jr.\",\n            \"isbn\": \"9789399457947\",\n            \"description\": \"Debitis modi qui laudantium accusamus aut repellat iste et. In placeat reprehenderit reprehenderit velit dolor vitae laboriosam. Suscipit veritatis autem facilis rem quo consequatur.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 70,\n            \"title\": \"Labore rerum magnam.\",\n            \"author\": \"Sidney Zieme\",\n            \"isbn\": \"9790086796355\",\n            \"description\": \"Eum consequatur ipsum ut nihil unde. Eius ea architecto vel sed inventore placeat. Rerum possimus blanditiis pariatur impedit adipisci maxime. Maiores illum adipisci nesciunt inventore et veniam officiis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:40\",\n                \"updated_at\": \"2025-03-05 06:49:40\"\n            }\n        },\n        {\n            \"id\": 71,\n            \"title\": \"Animi enim dicta.\",\n            \"author\": \"Alicia Pollich\",\n            \"isbn\": \"9781436042079\",\n            \"description\": \"Nesciunt quia consequatur voluptatibus maiores omnis dolorum aperiam. Dolorem voluptatem sit ratione consequuntur eum eum est. Quis et laborum dignissimos ipsam.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:41\",\n                \"updated_at\": \"2025-03-05 06:49:41\"\n            }\n        },\n        {\n            \"id\": 72,\n            \"title\": \"Ea in rerum mollitia.\",\n            \"author\": \"Prof. Ashtyn Steuber\",\n            \"isbn\": \"9782252694688\",\n            \"description\": \"Quis commodi consectetur inventore architecto. Rerum dignissimos ut necessitatibus et nesciunt. Cumque occaecati illo est.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:41\",\n                \"updated_at\": \"2025-03-05 06:49:41\"\n            }\n        },\n        {\n            \"id\": 73,\n            \"title\": \"In provident magnam.\",\n            \"author\": \"Arlo Yundt\",\n            \"isbn\": \"9781133201991\",\n            \"description\": \"Dolores est est laboriosam cumque et. Eius perferendis atque corrupti dolor rem. Vitae sint esse occaecati ratione et consequatur. Hic nulla deserunt dolores est quibusdam est ipsam.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:42\",\n                \"updated_at\": \"2025-03-05 06:49:42\"\n            }\n        },\n        {\n            \"id\": 74,\n            \"title\": \"Doloremque alias omnis itaque.\",\n            \"author\": \"Kaden Thompson\",\n            \"isbn\": \"9792696114291\",\n            \"description\": \"Pariatur consequatur molestiae nesciunt quo dolorum et. Porro dolor et nam amet. Velit dicta provident nisi rerum dolor explicabo qui. Natus sequi et doloremque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:42\",\n                \"updated_at\": \"2025-03-05 06:49:42\"\n            }\n        },\n        {\n            \"id\": 75,\n            \"title\": \"Dolorem voluptas voluptates voluptatem.\",\n            \"author\": \"Alison Franecki Sr.\",\n            \"isbn\": \"9785179363026\",\n            \"description\": \"Quae explicabo voluptatem voluptate sed ab est. Id fugit aut nam quo minima molestiae aliquid. Sed beatae ut ea. Aspernatur voluptatibus fugiat dolor veritatis libero maxime.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:42\",\n                \"updated_at\": \"2025-03-05 06:49:42\"\n            }\n        },\n        {\n            \"id\": 76,\n            \"title\": \"Et consequuntur accusamus.\",\n            \"author\": \"Geovanni Lehner\",\n            \"isbn\": \"9780655743804\",\n            \"description\": \"Quaerat at itaque architecto et quibusdam laborum placeat. Quia rerum non est rerum eveniet ea quam. Quaerat repudiandae eveniet numquam vel sapiente molestiae voluptatem.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:42\",\n                \"updated_at\": \"2025-03-05 06:49:42\"\n            }\n        },\n        {\n            \"id\": 77,\n            \"title\": \"Et fugit et qui.\",\n            \"author\": \"Miss Josie Lueilwitz MD\",\n            \"isbn\": \"9784971322293\",\n            \"description\": \"Amet vero nihil quis quo amet id quae. Omnis consequuntur debitis aut quos non aut dolorem. Saepe est facilis fugiat. Rerum quos qui ut aliquam fuga ea sint. Aliquid officia omnis quod velit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:43\",\n                \"updated_at\": \"2025-03-05 06:49:43\"\n            }\n        },\n        {\n            \"id\": 78,\n            \"title\": \"Vitae necessitatibus accusantium iste.\",\n            \"author\": \"Prof. Westley Gulgowski\",\n            \"isbn\": \"9795786013467\",\n            \"description\": \"Aut quia sit aut dolore ut est. Sed aut ipsa tempore eveniet. In omnis et libero sequi. Quia voluptatem earum assumenda soluta.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:43\",\n                \"updated_at\": \"2025-03-05 06:49:43\"\n            }\n        },\n        {\n            \"id\": 79,\n            \"title\": \"Eligendi impedit modi.\",\n            \"author\": \"Dr. Hyman Stanton II\",\n            \"isbn\": \"9787836658810\",\n            \"description\": \"Non numquam dolorem sed exercitationem repellendus et similique. Accusantium deserunt facilis nihil nam minima dolor quas. Earum aut enim impedit neque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:43\",\n                \"updated_at\": \"2025-03-05 06:49:43\"\n            }\n        },\n        {\n            \"id\": 80,\n            \"title\": \"Harum praesentium ullam distinctio.\",\n            \"author\": \"Dayna Gislason\",\n            \"isbn\": \"9784918665339\",\n            \"description\": \"Et facilis dolorum modi dignissimos quasi. Mollitia dolore quisquam reprehenderit maiores sunt provident. Ducimus doloremque consectetur et et qui delectus rerum. Porro qui alias doloribus et et sunt.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:43\",\n                \"updated_at\": \"2025-03-05 06:49:43\"\n            }\n        },\n        {\n            \"id\": 81,\n            \"title\": \"Voluptas sunt hic itaque.\",\n            \"author\": \"Marie Witting\",\n            \"isbn\": \"9786117452390\",\n            \"description\": \"Aliquam et est qui. Sequi recusandae et itaque aliquid doloremque. Reprehenderit eaque consequatur excepturi iure.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:44\",\n                \"updated_at\": \"2025-03-05 06:49:44\"\n            }\n        },\n        {\n            \"id\": 82,\n            \"title\": \"Porro id dicta.\",\n            \"author\": \"Stephon Hegmann DVM\",\n            \"isbn\": \"9790131156448\",\n            \"description\": \"Rerum qui atque quia. Qui consequuntur aut illum. Quis ea sapiente pariatur adipisci quae nesciunt ipsum. Fugiat omnis suscipit et aliquam.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:44\",\n                \"updated_at\": \"2025-03-05 06:49:44\"\n            }\n        },\n        {\n            \"id\": 83,\n            \"title\": \"Vero voluptatem ea aut.\",\n            \"author\": \"Gudrun DuBuque\",\n            \"isbn\": \"9796325751406\",\n            \"description\": \"Dolor ea nesciunt fugit quasi sit occaecati. Labore et qui architecto est ullam vel ea quas. Nisi amet excepturi et harum. Voluptatibus sed deleniti distinctio qui quidem sint.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:44\",\n                \"updated_at\": \"2025-03-05 06:49:44\"\n            }\n        },\n        {\n            \"id\": 84,\n            \"title\": \"Provident accusamus corporis rerum.\",\n            \"author\": \"Perry Larson\",\n            \"isbn\": \"9797397906817\",\n            \"description\": \"Aut odit voluptate quia iusto qui dolorem suscipit enim. Cum illo aut voluptate neque eos quaerat dolor explicabo. Officia impedit labore excepturi aliquam doloremque impedit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:45\",\n                \"updated_at\": \"2025-03-05 06:49:45\"\n            }\n        },\n        {\n            \"id\": 85,\n            \"title\": \"Omnis consequatur et dolor.\",\n            \"author\": \"Torrey McClure\",\n            \"isbn\": \"9799581413255\",\n            \"description\": \"Enim rem doloribus itaque distinctio a incidunt dolores ex. Assumenda omnis nemo distinctio cupiditate assumenda quos eligendi. Asperiores occaecati quidem et soluta ut. Laborum porro voluptatibus dolorem culpa modi.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:45\",\n                \"updated_at\": \"2025-03-05 06:49:45\"\n            }\n        },\n        {\n            \"id\": 86,\n            \"title\": \"Libero quis aut.\",\n            \"author\": \"Dr. Nicholas Medhurst PhD\",\n            \"isbn\": \"9787389239399\",\n            \"description\": \"Quae voluptatibus quo numquam est et nemo aut excepturi. Doloremque fugiat hic perferendis. Voluptas id necessitatibus velit quis et. Et voluptate fugit rerum cupiditate.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:45\",\n                \"updated_at\": \"2025-03-05 06:49:45\"\n            }\n        },\n        {\n            \"id\": 87,\n            \"title\": \"Est dignissimos voluptatem delectus.\",\n            \"author\": \"Manley Botsford\",\n            \"isbn\": \"9786141907880\",\n            \"description\": \"Inventore consequatur quisquam omnis. Itaque temporibus deserunt velit dolore qui harum eos. Recusandae non suscipit et impedit earum. Optio voluptates nisi perspiciatis qui occaecati itaque dolor.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:45\",\n                \"updated_at\": \"2025-03-05 06:49:45\"\n            }\n        },\n        {\n            \"id\": 88,\n            \"title\": \"Unde aut placeat dolores ad.\",\n            \"author\": \"Aryanna Jenkins\",\n            \"isbn\": \"9790253744639\",\n            \"description\": \"Enim enim aut ut excepturi autem saepe. Consequatur ad omnis eligendi quod itaque qui nulla ut. Quia beatae et non nulla qui quam suscipit. Est error ea sed itaque in qui.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:46\",\n                \"updated_at\": \"2025-03-05 06:49:46\"\n            }\n        },\n        {\n            \"id\": 89,\n            \"title\": \"Voluptates hic molestiae.\",\n            \"author\": \"Shirley Marvin DDS\",\n            \"isbn\": \"9782307859499\",\n            \"description\": \"Quis ad assumenda odit quam illo. Quam veniam ducimus et officiis in ut reiciendis. Eveniet non exercitationem voluptas natus asperiores repellat sed eum. Impedit accusamus error libero perspiciatis sed.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:46\",\n                \"updated_at\": \"2025-03-05 06:49:46\"\n            }\n        },\n        {\n            \"id\": 90,\n            \"title\": \"Odio odio facilis.\",\n            \"author\": \"Mr. Ward Grant\",\n            \"isbn\": \"9797483965049\",\n            \"description\": \"Voluptas saepe quisquam voluptas reprehenderit. Maiores est ut minima error quasi saepe veniam. Ea officiis repudiandae et nisi quia dicta.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:46\",\n                \"updated_at\": \"2025-03-05 06:49:46\"\n            }\n        },\n        {\n            \"id\": 91,\n            \"title\": \"Rerum ad nostrum.\",\n            \"author\": \"Gardner Rogahn\",\n            \"isbn\": \"9790103705254\",\n            \"description\": \"Sint est et at architecto. Impedit repellendus inventore aperiam accusamus modi ducimus. At amet quis ut omnis dolore sed.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:46\",\n                \"updated_at\": \"2025-03-05 06:49:46\"\n            }\n        },\n        {\n            \"id\": 92,\n            \"title\": \"Exercitationem dolorem dolore.\",\n            \"author\": \"Zena Reichel\",\n            \"isbn\": \"9795347740719\",\n            \"description\": \"Recusandae voluptatibus temporibus laudantium blanditiis. Repellendus sint harum et accusantium. Et veritatis distinctio ipsam provident eaque ad aut. Ducimus quia aspernatur qui at iusto sed. Ea sequi reiciendis temporibus non.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:47\",\n                \"updated_at\": \"2025-03-05 06:49:47\"\n            }\n        },\n        {\n            \"id\": 93,\n            \"title\": \"Et nobis alias.\",\n            \"author\": \"Max Dicki\",\n            \"isbn\": \"9791950899424\",\n            \"description\": \"Totam sed totam sed libero placeat. Id quaerat eos nemo praesentium temporibus cum sunt. Temporibus placeat perferendis dolor sapiente illo sunt aut aut. Voluptatum voluptas tenetur ratione in qui pariatur reprehenderit.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:47\",\n                \"updated_at\": \"2025-03-05 06:49:47\"\n            }\n        },\n        {\n            \"id\": 94,\n            \"title\": \"Eveniet nemo eum.\",\n            \"author\": \"Dr. Christophe Hane\",\n            \"isbn\": \"9794162624112\",\n            \"description\": \"Vel voluptatem repellendus et ut hic assumenda error. Occaecati occaecati sequi debitis est itaque blanditiis magnam assumenda. Placeat accusantium esse aut.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:47\",\n                \"updated_at\": \"2025-03-05 06:49:47\"\n            }\n        },\n        {\n            \"id\": 95,\n            \"title\": \"Nulla dolor quod.\",\n            \"author\": \"Abraham Metz\",\n            \"isbn\": \"9794225096399\",\n            \"description\": \"Rerum voluptatem et rerum ullam necessitatibus. Alias id velit qui. Quae est eius quis debitis.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:48\",\n                \"updated_at\": \"2025-03-05 06:49:48\"\n            }\n        },\n        {\n            \"id\": 96,\n            \"title\": \"Pariatur ipsam.\",\n            \"author\": \"Dale Abernathy\",\n            \"isbn\": \"9782611269946\",\n            \"description\": \"Mollitia possimus tenetur necessitatibus quia. Nesciunt harum inventore aut voluptatibus quod ex ut minus. Qui nesciunt molestias natus praesentium consequuntur molestias veniam ipsam.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:48\",\n                \"updated_at\": \"2025-03-05 06:49:48\"\n            }\n        },\n        {\n            \"id\": 97,\n            \"title\": \"Accusamus ipsam vel.\",\n            \"author\": \"Mackenzie Cassin\",\n            \"isbn\": \"9782780879335\",\n            \"description\": \"Nemo sit labore et illum laboriosam placeat. Sunt ullam explicabo beatae delectus quis iure provident. Sequi ut a sit impedit iure voluptas. Incidunt aut illo rerum voluptas cum harum. Qui iste aut consequatur et voluptatem ipsa.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:48\",\n                \"updated_at\": \"2025-03-05 06:49:48\"\n            }\n        },\n        {\n            \"id\": 98,\n            \"title\": \"Eum blanditiis occaecati ut.\",\n            \"author\": \"Prof. Trudie Bartell\",\n            \"isbn\": \"9789635065073\",\n            \"description\": \"Rem assumenda quis et doloremque maxime eum quo. Reprehenderit reiciendis fugiat delectus illum qui. Rem excepturi consequuntur iure.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:48\",\n                \"updated_at\": \"2025-03-05 06:49:48\"\n            }\n        },\n        {\n            \"id\": 99,\n            \"title\": \"Dignissimos odio et voluptates.\",\n            \"author\": \"Bryana Pfannerstill MD\",\n            \"isbn\": \"9781462072873\",\n            \"description\": \"Dicta velit vitae fugit vel omnis. Maiores fugiat veniam rerum accusantium molestiae similique non. Sint mollitia unde sit nam facilis ullam nulla. Laboriosam voluptas explicabo doloremque.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:49\",\n                \"updated_at\": \"2025-03-05 06:49:49\"\n            }\n        },\n        {\n            \"id\": 100,\n            \"title\": \"Incidunt error quas.\",\n            \"author\": \"Teagan Pfeffer\",\n            \"isbn\": \"9786406126339\",\n            \"description\": \"Sit dolorem eveniet aliquam aut vel iure modi. Consectetur quis porro eos. Dolorem incidunt saepe eaque explicabo asperiores et.\",\n            \"timestamps\": {\n                \"created_at\": \"2025-03-05 06:49:49\",\n                \"updated_at\": \"2025-03-05 06:49:49\"\n            }\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a New Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"New Laravel Guide\",\n    \"author\": \"John Doe\",\n    \"isbn\": \"9876543210123\",\n    \"description\": \"An advanced Laravel guide.\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/books",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://127.0.0.1:8000/api/books",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Laravel Guide\",\n    \"author\": \"John Doe\",\n    \"isbn\": \"9876543210123\",\n    \"description\": \"An advanced Laravel guide.\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 05 Mar 2025 07:29:20 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <title>Forbidden</title>\n        <style>\n            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}code{font-family:monospace,monospace;font-size:1em}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}code{font-family:Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-gray-400{--border-opacity:1;border-color:#cbd5e0;border-color:rgba(203,213,224,var(--border-opacity))}.border-t{border-top-width:1px}.border-r{border-right-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-xl{max-width:36rem}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.uppercase{text-transform:uppercase}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tracking-wider{letter-spacing:.05em}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@-webkit-keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes spin{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@-webkit-keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@keyframes ping{0%{transform:scale(1);opacity:1}75%,to{transform:scale(2);opacity:0}}@-webkit-keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@keyframes pulse{0%,to{opacity:1}50%{opacity:.5}}@-webkit-keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@keyframes bounce{0%,to{transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(.8,0,1,1);animation-timing-function:cubic-bezier(.8,0,1,1)}50%{transform:translateY(0);-webkit-animation-timing-function:cubic-bezier(0,0,.2,1);animation-timing-function:cubic-bezier(0,0,.2,1)}}@media (min-width:640px){.sm\\:rounded-lg{border-radius:.5rem}.sm\\:block{display:block}.sm\\:items-center{align-items:center}.sm\\:justify-start{justify-content:flex-start}.sm\\:justify-between{justify-content:space-between}.sm\\:h-20{height:5rem}.sm\\:ml-0{margin-left:0}.sm\\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\\:pt-0{padding-top:0}.sm\\:text-left{text-align:left}.sm\\:text-right{text-align:right}}@media (min-width:768px){.md\\:border-t-0{border-top-width:0}.md\\:border-l{border-left-width:1px}.md\\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}\n        </style>\n        <style>\n            body {\n                font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n            }\n        </style>\n    </head>\n    <body class=\"antialiased\">\n        <div class=\"relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0\">\n            <div class=\"max-w-xl mx-auto sm:px-6 lg:px-8\">\n                <div class=\"flex items-center pt-8 sm:justify-start sm:pt-0\">\n                    <div class=\"px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider\">\n                        403                    </div>\n                    <div class=\"ml-4 text-lg text-gray-500 uppercase tracking-wider\">\n                        This action is unauthorized.                    </div>\n                </div>\n            </div>\n        </div>\n    </body>\n</html>"
+				},
+				{
+					"name": "http://127.0.0.1:8000/api/books",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New Laravel Guide\",\n    \"author\": \"John Doe\",\n    \"isbn\": \"9876543210123\",\n    \"description\": \"An advanced Laravel guide.\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/books",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 07:46:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Book created successfully\",\n    \"data\": {\n        \"id\": 101,\n        \"title\": \"New Laravel Guide\",\n        \"author\": \"John Doe\",\n        \"isbn\": \"9876543210123\",\n        \"description\": \"An advanced Laravel guide.\",\n        \"timestamps\": {\n            \"created_at\": \"2025-03-05 07:46:17\",\n            \"updated_at\": \"2025-03-05 07:46:17\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get a Single Book by ID",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/books/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get a Single Book by ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/books/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 07:48:52 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Book details retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Consectetur et reprehenderit.\",\n        \"author\": \"Marquise Langworth\",\n        \"isbn\": \"9799901261689\",\n        \"description\": \"In rerum quo maxime asperiores et ducimus saepe. In aliquam dicta aperiam eaque voluptatibus. Ducimus eos consequatur unde cupiditate culpa provident sunt occaecati.\",\n        \"timestamps\": {\n            \"created_at\": \"2025-03-05 06:49:38\",\n            \"updated_at\": \"2025-03-05 06:49:38\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update a Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Updated Laravel Guide\",\n    \"author\": \"Jane Dode\",\n    \"isbn\": \"9876543210124\",\n    \"description\": \"Updated description for Laravel guide.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/books/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update a Book",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Updated Laravel Guide\",\n    \"author\": \"Jane Dode\",\n    \"isbn\": \"9876543210124\",\n    \"description\": \"Updated description for Laravel guide.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/books/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 07:57:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Book updated successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"title\": \"Updated Laravel Guide\",\n        \"author\": \"Jane Dode\",\n        \"isbn\": \"9876543210124\",\n        \"description\": \"Updated description for Laravel guide.\",\n        \"timestamps\": {\n            \"created_at\": \"2025-03-05 06:49:38\",\n            \"updated_at\": \"2025-03-05 07:57:40\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete a Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/books/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"books",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/api/books/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/books/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"books",
+								"3"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:01:46 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get Editions of a Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/editions/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"editions",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/api/editions/1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/editions/3",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"editions",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:02:32 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Edition details retrieved successfully\",\n    \"data\": {\n        \"id\": 3,\n        \"book_id\": 23,\n        \"condition\": \"used\",\n        \"repair_count\": 3,\n        \"available\": 1,\n        \"timestamps\": {\n            \"created_at\": \"2025-03-05 06:49:40\",\n            \"updated_at\": \"2025-03-05 06:49:40\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a New Edition",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": " application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"book_id\": 4,\n    \"condition\": \"new\",\n    \"repair_count\": 0,\n    \"available\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/editions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"editions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/api/editions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book_id\": 110,\n    \"condition\": \"new\",\n    \"repair_count\": 0,\n    \"available\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/editions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"editions"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:04:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The selected book id is invalid.\",\n    \"errors\": {\n        \"book_id\": [\n            \"The selected book id is invalid.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "{{url}}/api/editions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"book_id\": 4,\n    \"condition\": \"new\",\n    \"repair_count\": 0,\n    \"available\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/editions",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"editions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:04:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Edition created successfully\",\n    \"data\": {\n        \"id\": 81,\n        \"book_id\": 4,\n        \"condition\": \"new\",\n        \"repair_count\": 0,\n        \"available\": true,\n        \"timestamps\": {\n            \"created_at\": \"2025-03-05 08:04:31\",\n            \"updated_at\": \"2025-03-05 08:04:31\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete an Edition",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/editions/5",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"editions",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/api/editions/1",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/editions/5",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"editions",
+								"5"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:08:02 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Get All Reservations",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/reservations",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reservations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/api/reservations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/reservations",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:47:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reservations retrieved successfully\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_id\": 11,\n            \"edition_id\": 51,\n            \"reserved_at\": \"2025-03-05 06:49:41\",\n            \"due_date\": \"2025-03-20 06:49:41\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 2,\n            \"user_id\": 12,\n            \"edition_id\": 52,\n            \"reserved_at\": \"2025-03-05 06:49:41\",\n            \"due_date\": \"2025-03-23 06:49:41\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 13,\n            \"edition_id\": 53,\n            \"reserved_at\": \"2025-03-05 06:49:41\",\n            \"due_date\": \"2025-03-22 06:49:41\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 4,\n            \"user_id\": 14,\n            \"edition_id\": 54,\n            \"reserved_at\": \"2025-03-05 06:49:42\",\n            \"due_date\": \"2025-03-24 06:49:42\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 5,\n            \"user_id\": 15,\n            \"edition_id\": 55,\n            \"reserved_at\": \"2025-03-05 06:49:42\",\n            \"due_date\": \"2025-03-23 06:49:42\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 16,\n            \"edition_id\": 56,\n            \"reserved_at\": \"2025-03-05 06:49:42\",\n            \"due_date\": \"2025-03-18 06:49:42\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 7,\n            \"user_id\": 17,\n            \"edition_id\": 57,\n            \"reserved_at\": \"2025-03-05 06:49:42\",\n            \"due_date\": \"2025-03-16 06:49:42\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 8,\n            \"user_id\": 18,\n            \"edition_id\": 58,\n            \"reserved_at\": \"2025-03-05 06:49:43\",\n            \"due_date\": \"2025-03-19 06:49:43\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 9,\n            \"user_id\": 19,\n            \"edition_id\": 59,\n            \"reserved_at\": \"2025-03-05 06:49:43\",\n            \"due_date\": \"2025-03-25 06:49:43\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 10,\n            \"user_id\": 20,\n            \"edition_id\": 60,\n            \"reserved_at\": \"2025-03-05 06:49:43\",\n            \"due_date\": \"2025-03-14 06:49:43\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 11,\n            \"user_id\": 21,\n            \"edition_id\": 61,\n            \"reserved_at\": \"2025-03-05 06:49:43\",\n            \"due_date\": \"2025-03-14 06:49:43\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 12,\n            \"user_id\": 22,\n            \"edition_id\": 62,\n            \"reserved_at\": \"2025-03-05 06:49:44\",\n            \"due_date\": \"2025-03-13 06:49:44\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 13,\n            \"user_id\": 23,\n            \"edition_id\": 63,\n            \"reserved_at\": \"2025-03-05 06:49:44\",\n            \"due_date\": \"2025-03-20 06:49:44\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 14,\n            \"user_id\": 24,\n            \"edition_id\": 64,\n            \"reserved_at\": \"2025-03-05 06:49:44\",\n            \"due_date\": \"2025-03-13 06:49:44\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 15,\n            \"user_id\": 25,\n            \"edition_id\": 65,\n            \"reserved_at\": \"2025-03-05 06:49:45\",\n            \"due_date\": \"2025-03-12 06:49:45\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 16,\n            \"user_id\": 26,\n            \"edition_id\": 66,\n            \"reserved_at\": \"2025-03-05 06:49:45\",\n            \"due_date\": \"2025-03-24 06:49:45\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 17,\n            \"user_id\": 27,\n            \"edition_id\": 67,\n            \"reserved_at\": \"2025-03-05 06:49:45\",\n            \"due_date\": \"2025-03-15 06:49:45\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 18,\n            \"user_id\": 28,\n            \"edition_id\": 68,\n            \"reserved_at\": \"2025-03-05 06:49:45\",\n            \"due_date\": \"2025-03-16 06:49:45\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 19,\n            \"user_id\": 29,\n            \"edition_id\": 69,\n            \"reserved_at\": \"2025-03-05 06:49:46\",\n            \"due_date\": \"2025-03-15 06:49:46\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 20,\n            \"user_id\": 30,\n            \"edition_id\": 70,\n            \"reserved_at\": \"2025-03-05 06:49:46\",\n            \"due_date\": \"2025-03-23 06:49:46\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 21,\n            \"user_id\": 31,\n            \"edition_id\": 71,\n            \"reserved_at\": \"2025-03-05 06:49:46\",\n            \"due_date\": \"2025-03-22 06:49:46\",\n            \"status\": \"approved\"\n        },\n        {\n            \"id\": 22,\n            \"user_id\": 32,\n            \"edition_id\": 72,\n            \"reserved_at\": \"2025-03-05 06:49:46\",\n            \"due_date\": \"2025-03-23 06:49:46\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 23,\n            \"user_id\": 33,\n            \"edition_id\": 73,\n            \"reserved_at\": \"2025-03-05 06:49:47\",\n            \"due_date\": \"2025-03-18 06:49:47\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 24,\n            \"user_id\": 34,\n            \"edition_id\": 74,\n            \"reserved_at\": \"2025-03-05 06:49:47\",\n            \"due_date\": \"2025-03-16 06:49:47\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 25,\n            \"user_id\": 35,\n            \"edition_id\": 75,\n            \"reserved_at\": \"2025-03-05 06:49:47\",\n            \"due_date\": \"2025-03-19 06:49:47\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 26,\n            \"user_id\": 36,\n            \"edition_id\": 76,\n            \"reserved_at\": \"2025-03-05 06:49:48\",\n            \"due_date\": \"2025-03-22 06:49:48\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 27,\n            \"user_id\": 37,\n            \"edition_id\": 77,\n            \"reserved_at\": \"2025-03-05 06:49:48\",\n            \"due_date\": \"2025-03-14 06:49:48\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 28,\n            \"user_id\": 38,\n            \"edition_id\": 78,\n            \"reserved_at\": \"2025-03-05 06:49:48\",\n            \"due_date\": \"2025-03-21 06:49:48\",\n            \"status\": \"cancelled\"\n        },\n        {\n            \"id\": 29,\n            \"user_id\": 39,\n            \"edition_id\": 79,\n            \"reserved_at\": \"2025-03-05 06:49:48\",\n            \"due_date\": \"2025-03-15 06:49:48\",\n            \"status\": \"returned\"\n        },\n        {\n            \"id\": 30,\n            \"user_id\": 40,\n            \"edition_id\": 80,\n            \"reserved_at\": \"2025-03-05 06:49:49\",\n            \"due_date\": \"2025-03-21 06:49:49\",\n            \"status\": \"approved\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create a New Reservation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_id\": 10,\n    \"edition_id\": 52\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/reservations",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reservations"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/api/reservations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": " application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": " application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 2,\n    \"edition_id\": 5\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/reservations",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"status": "Unprocessable Content",
+					"code": 422,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:55:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"The selected edition id is invalid.\",\n    \"errors\": {\n        \"edition_id\": [\n            \"The selected edition id is invalid.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "{{url}}/api/reservations",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\": 10,\n    \"edition_id\": 52\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/reservations",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reservations"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:56:18 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reservation created successfully\",\n    \"data\": {\n        \"id\": 31,\n        \"user_id\": 10,\n        \"edition_id\": 52,\n        \"reserved_at\": \"2025-03-05 08:56:18\",\n        \"due_date\": \"2025-03-19 08:56:18\",\n        \"status\": \"approved\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Cancel a Reservation",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/reservations/31/cancel",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reservations",
+						"31",
+						"cancel"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "{{url}}/api/reservations/15/cancel",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/reservations/331/cancel",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reservations",
+								"331",
+								"cancel"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 08:57:13 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reservation cancelled successfully\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Return a Book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/api/reservations/32/return",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"reservations",
+						"32",
+						"return"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Return a Book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/api/reservations/32/return",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"reservations",
+								"32",
+								"return"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.2.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 05 Mar 2025 09:01:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"Book returned successfully\",\n    \"data\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User Penalties",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"id\": 5,\n        \"user_id\": 2,\n        \"amount\": 2000,\n        \"reason\": \"Late book return\",\n        \"created_at\": \"2024-03-04 10:15:00\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/penalties",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"penalties"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "127.0.0.1:8000",
+			"type": "string"
+		}
+	]
+}
